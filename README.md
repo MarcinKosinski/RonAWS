@@ -10,8 +10,8 @@ R on AWS
 Webinar organized by [Why R? Foundation](http://whyr.pl)
 --------------------------------------------------------
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/foundation.JPG" alt="foundation" />
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/map.JPG" alt="foundation" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/foundation.JPG" alt="foundation" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/map.JPG" alt="foundation" />
 
 Table of contents
 =================
@@ -40,14 +40,14 @@ Logging
     -   Example
         <a href="https://021312779203.signin.aws.amazon.com/console" class="uri">https://021312779203.signin.aws.amazon.com/console</a>
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/logging.JPG" alt="foundation" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/logging.JPG" alt="foundation" />
 
 Management Console
 ==================
 
 -   <a href="https://console.aws.amazon.com/" class="uri">https://console.aws.amazon.com/</a>
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/console.JPG" alt="console" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/console.JPG" alt="console" />
 
 Services we will cover
 ======================
@@ -97,13 +97,13 @@ archive, enterprise applications, IoT devices, and big data analytics.
 
 Go to your profile -\> My Security Credentials -\> Create Access Key
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/credentials.png" alt="credentials" />
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/access_key.png" alt="access_key" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/credentials.png" alt="credentials" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/access_key.png" alt="access_key" />
 
 This is also the place where you can add MFA (multi factor
 authentication).
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/mfa.JPG" alt="access_key" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/mfa.JPG" alt="access_key" />
 
 Store credentials in you `.Renviron` file in the working directory
 
@@ -189,7 +189,7 @@ aws.s3::put_object(
 
 and assign a policy to the bucket manually
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/bucket_policy.JPG" alt="access_key" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/bucket_policy.JPG" alt="access_key" />
 
 ``` json
 {
@@ -207,7 +207,7 @@ and assign a policy to the bucket manually
 ```
 
 or automatically
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/bucket_policy_automated.JPG" alt="access_key" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/bucket_policy_automated.JPG" alt="access_key" />
 
 ``` r
 aws.s3::put_bucket_policy(
@@ -220,22 +220,22 @@ aws.s3::put_bucket_policy(
 
 In bucket options, press properties
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/properties.JPG" alt="properties" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/properties.JPG" alt="properties" />
 
 and scrool down to static website hosting
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/static_website_hosting.JPG" alt="static_website_hosting" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/static_website_hosting.JPG" alt="static_website_hosting" />
 
 Enable the option, and provide the name of the index.html file that
 stand for the landing page of your website
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/index.JPG" alt="index" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/index.JPG" alt="index" />
 
 After that you should be able to see the address of your website
 
 <http://example-website-whyr.s3-website.eu-central-1.amazonaws.com/>
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/website.JPG" alt="website" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/website.JPG" alt="website" />
 
 AWS RDS
 =======
@@ -258,22 +258,22 @@ library(dplyr)
 ```
 
 From the RDS console panel you can create the database
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/create_db.JPG" alt="create" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/create_db.JPG" alt="create" />
 
 and select the engine that you want.
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/engine_db.JPG" alt="engine" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/engine_db.JPG" alt="engine" />
 
 You should be able to create credentials for the future access.
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/credentials_db.JPG" alt="credentials" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/credentials_db.JPG" alt="credentials" />
 
 Pick the size that you need
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/size_db.JPG" alt="size" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/size_db.JPG" alt="size" />
 
 and remember to name the database within a host
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/name_db.JPG" alt="name" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/name_db.JPG" alt="name" />
 
 Once the database is created you should be able to get it’s endpoint
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/endpoint_db.JPG" alt="name" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/endpoint_db.JPG" alt="name" />
 
 ``` r
 rds_credentials <- list(
@@ -286,20 +286,20 @@ rds_credentials <- list(
 ```
 
 What you need to remember about are the security group settings
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/security_group_name.JPG" alt="security_group_name" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/security_group_name.JPG" alt="security_group_name" />
 
 You can edit security group
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/edit_security.png" alt="edit_security" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/edit_security.png" alt="edit_security" />
 
 So that the port 5432 is accessible for the traffic
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/rules_db.JPG" alt="rules_db" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/rules_db.JPG" alt="rules_db" />
 
 Make sure the database is publically available
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/accessibility.JPG" alt="accessibility" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/accessibility.JPG" alt="accessibility" />
 
 You can change that in database connectivity settings.
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/connectivity.JPG" alt="connectivity" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/connectivity.JPG" alt="connectivity" />
 
 ``` r
 # connect to the database
@@ -377,4 +377,4 @@ library(aws.ec2)
 RStudio Server Amazon Machine Image (AMI) -
 <a href="https://www.louisaslett.com/RStudio_AMI/" class="uri">https://www.louisaslett.com/RStudio_AMI/</a>
 
-<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/master/img/important.JPG" alt="important" />
+<img src="https://raw.githubusercontent.com/MarcinKosinski/RonAWS/main/img/important.JPG" alt="important" />
